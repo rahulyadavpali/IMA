@@ -1,0 +1,102 @@
+/* Defaults */
+body{color: #465665;}
+a{color: #5b7083;transition: all .25s ease-in-out;}
+
+/* The title */
+.title{font-weight: 700;}
+
+/* The description */
+.desc {
+  font-size: 1em;
+  font-style: italic;
+  font-family: Georgia, serif;
+}
+
+/* Text-centering */
+.title, .desc, .intro{text-align: center;}
+
+/* Intro section */
+.intro {
+  margin: 1.75em 0 .75em;
+  margin-bottom: 1.75em;
+  /*border-bottom: 3px double rgba(0, 0, 0, 0.05);*/
+}
+
+.intro a {
+  opacity: .7;
+}
+
+.intro a:hover {
+  opacity: 1;
+}
+
+.intro h3 {
+  font-size: .825em;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: .25em .75em .75em;
+}
+
+.intro h3 a {
+  font-weight: 400;
+}
+
+/* Masonry grid */
+.masonry {
+  transition: all .5s ease-in-out;
+  column-gap: 30px;
+  column-fill: initial;
+}
+
+/* Masonry item */
+.masonry .brick{margin-bottom: 30px;display: inline-block;vertical-align: top;}
+
+.size_one{width: 300px;height: 300px;}
+.size_two{width: 300px;height: 500px;}
+.size_one img, .size_two img{width: 100%;height: 100%;object-fit: contain;object-position: center;}
+
+/* Masonry image effects */
+.masonry .brick img {
+  transition: all .5s ease-in-out;
+  backface-visibility: hidden; /* Remove Image flickering on hover */
+}
+
+.masonry .brick:hover img {
+  opacity: 1;
+}
+
+/* Bordered masonry */
+.masonry.bordered {
+  /*column-gap: 50px;*/
+  column-gap: 25px;
+}
+
+.masonry.bordered .brick {
+  /*padding-bottom: 25px;*/
+  margin-bottom: 25px;
+}
+
+/* Gutterless masonry */
+.masonry.gutterless {
+  column-gap: 0;
+}
+
+.masonry.gutterless .brick{
+  margin-bottom: 0;
+}
+
+
+/* Masonry on tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .masonry{column-count: 3;}
+}
+
+/* Masonry on big screens */
+@media only screen and (min-width: 1024px){
+    .desc{font-size: 1.25em;}
+
+    .intro{letter-spacing: 1px;}
+
+    .masonry{column-count: 4;}
+}

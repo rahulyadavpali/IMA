@@ -1,0 +1,33 @@
+@media only screen and (max-width: 1920px)
+{}
+
+@media only screen and (max-width: 1370px)
+{}
+
+@media only screen and (max-width: 1260px)
+{}
+
+@media only screen and (max-width: 1199px)
+{
+	.courses_heading h3{font-size: 15px;}
+}
+
+@media only screen and (max-width: 991px)
+{
+	.courses_heading h3{font-size: 20px;}
+}
+
+@media only screen and (max-width: 767px)
+{}
+
+@media only screen and (max-width: 640px)
+{}
+
+@media only screen and (max-width: 575px)
+{}
+
+@media only screen and (max-width: 479px)
+{}
+
+@media only screen and (max-width: 400px)
+{}
